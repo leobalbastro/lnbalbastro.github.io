@@ -1,0 +1,115 @@
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    /* text-align: center; */
+}
+
+.header
+{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header a
+{
+    display: flex;
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+    color: white;
+}
+
+.menu
+{
+    color: white;
+    margin: 0 0 0 0;
+}
+
+.menu ol
+{
+    margin: 0;
+    list-style: none;
+}
+
+.menu a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.container
+{
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+.hero
+{
+    height: 300px;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image
+{
+    padding-left: 50px;
+}
+
+strong
+{
+    color: #026fff;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+h1
+{
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+}
+
+.knowledgment
+{
+    text-align: center;
+    margin: 0;
+}
+
+.Knowledge-title
+{
+    margin: 0;
+}
+
+figure
+{
+    margin: 0;
+}
+
+ol , ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header ol
+{
+    display: flex;
+    height: inherit;
+}
