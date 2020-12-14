@@ -4,6 +4,7 @@ body
     /* text-align: center; */
     /* background-color: #1b2127; */
     margin: 0;
+    background: #1b1b1b;
 }
 
 .header
@@ -113,10 +114,11 @@ h1
 h2
 {
     text-align: center;
-    margin: 10px;
+    margin: 0px;
     margin-bottom: 20px;
     color: #026fff;
     text-transform: uppercase;
+    /* background: #1b1b1b; */
 }
 
 h5
@@ -208,6 +210,8 @@ article
 {
     display:flex;
     flex-wrap:wrap;
+    /* background:#0c4692; */
+    margin: 0;
 }
 
 .Knowledge
@@ -218,7 +222,7 @@ article
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
-    background: #1b1b1b;
+    /* background: #1b1b1b; */
     color: white;
     text-align: center;
 }
@@ -228,4 +232,10 @@ article
     width: 480px;
     height: 320px;
     object-fit: cover;
+}
+
+.experience
+{
+    /* background: white; */
+    color: white;
 }
