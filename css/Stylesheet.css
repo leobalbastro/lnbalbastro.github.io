@@ -4,7 +4,7 @@ body
     /* text-align: center; */
     /* background-color: #1b2127; */
     margin: 0;
-    background: #1b1b1b;
+    background: #222222;
 }
 
 .header
@@ -15,6 +15,7 @@ body
     height: 70px;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .menu
@@ -67,7 +68,9 @@ body
 
 .container
 {
-    width: 1000px;
+    /* width: 1000px; */
+    /* width: 100%; */
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -85,6 +88,7 @@ body
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero-image
@@ -114,10 +118,10 @@ h1
 h2
 {
     text-align: center;
-    margin: 0px;
-    margin-bottom: 20px;
+    margin: 10px;
     color: #026fff;
     text-transform: uppercase;
+    margin-top: 0;
     /* background: #1b1b1b; */
 }
 
@@ -145,6 +149,7 @@ h5
 .Knowledge-title
 {
     margin: 0;
+    text-align: center;
 }
 
 
@@ -216,8 +221,10 @@ article
 
 .Knowledge
 {
-    margin: 10px;
-    width: 480px;
+    /* display:flex;
+    flex-wrap:wrap; */
+    /* margin: 5px; */
+    width: 50%;
     height: max-content;
     flex-shrink: 0;
     border-radius: 10px;
@@ -225,17 +232,119 @@ article
     /* background: #1b1b1b; */
     color: white;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .Knowledge img
 {
-    width: 480px;
-    height: 320px;
+    width: 100%;
+    padding: 5px;
     object-fit: cover;
 }
 
-.experience
+.experience , .experienceCaption
 {
-    /* background: white; */
+    background: #1b1b1b;
     color: white;
+}
+
+.contact
+{
+    background: #1b1b1b;
+}
+
+/* Desktop First que empieces desde el MQ (MediaQuery) mas grande */
+
+@media screen and (max-width: 1024px){
+    .contact .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-items: center; */
+    }
+}
+
+@media screen and (max-width: 767px){
+    .header
+    {
+        display: block;
+        height: auto;
+    }
+
+    .header ol{
+        display: block;
+
+    }
+
+    .header ol li{
+        height: 50px;
+        text-align: center;
+    }
+
+    .header a{
+        justify-content: center;
+    }
+
+    .header .logo{
+        text-align: center;
+    }
+
+    .Knowledge{
+        display: block;
+    }
+
+    .Knowledge-title{
+        font-size: 1em;
+    }
+
+    .Knowledge .figCaption{
+        width: auto;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .Knowledge-title{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 500px){
+        .Knowledge-title{
+            font-size: 10px;
+            text-align: center;
+            padding: 2px;
+            height: auto;
+        }
+}
+
+@media screen and (max-width: 390px){
+    .Knowledge-title{
+        font-size: 8px;
+        text-align: center;
+        padding: 2px;
+        height: auto;
+        
+    }
+    .contact .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .footer .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 310px){
+    .Knowledge-title{
+        font-size: 6px;
+        text-align: center;
+        padding: 2px;
+        height: auto;
+    }
 }
