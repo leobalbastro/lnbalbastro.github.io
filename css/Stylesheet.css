@@ -1871,6 +1871,7 @@ article
         align-items: center;
         justify-content: center;
         transition: .3s;
+        visibility: hidden;
     }
     .menu.is-active{
         left: 0;

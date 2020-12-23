@@ -123,16 +123,20 @@
         </div>        
     </footer>
     <script>
-        console.log(document.querySelector('.menu'));
+        // console.log(document.querySelector('.menu'));
         const ipad = window.matchMedia('screen and (max-width: 767px)')
         const menu=document.querySelector('.menu');
         const burgerButton = document.querySelector('#burger-menu');
-        burgerButton.addEventListener('click', hideShow);
+        // burgerButton.addEventListener('click', hideShow);
         
-        ipad.addListener(validation)
+        ipad.addListener(validation);
 
         function validation(event){
-            console.log(event)
+            if(event.matches){
+            burgerButton.addEventListener('click', hideShow);
+            }else{
+            burgerButton.removeEventListener('click', hideShow);
+            }
         }
         
         function hideShow(){
