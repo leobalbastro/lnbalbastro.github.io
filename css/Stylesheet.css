@@ -2035,7 +2035,7 @@ article
         justify-content: center;
     }
 }
-
+.contact
 form {
   /* Centrar el formulario en la página */
   margin: 0 auto;
@@ -2046,16 +2046,19 @@ form {
   border-radius: 1em;
 }
 
+.contact
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+.contact
 form li + li {
   margin-top: 1em;
 }
 
+.contact
 label {
   /* Tamaño y alineación uniforme */
   display: inline-block;
@@ -2063,6 +2066,7 @@ label {
   text-align: right;
 }
 
+.contact
 input,
 textarea {
   /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
@@ -2077,12 +2081,14 @@ textarea {
   border: 1px solid #999;
 }
 
+.contact
 input:focus,
 textarea:focus {
   /* Destacado adicional para elementos que tienen el cursor */
   border-color: #000;
 }
 
+.contact
 textarea {
   /* Alinear los campos de texto multilínea con sus etiquetas */
   vertical-align: top;
@@ -2091,11 +2097,13 @@ textarea {
   height: 5em;
 }
 
+.contact
 .button {
   /* Alinear los botones con los campos de texto */
   padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
 }
 
+.contact
 button {
   /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
      entre las etiquetas y sus campos de texto */
