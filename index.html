@@ -25,9 +25,9 @@
             </figure>
             <nav class="menu">
                 <ol>
-                    <li>
+                    <!-- <li>
                         <a class="link" href="bio.html" target="_self">Biograf&iacute;a</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a class="link" href="#knowledgement">Conocimientos</a>
                     </li>
@@ -107,12 +107,17 @@
     </section>
     <section class="contact" id="contact">
         <div class="container">
-            <form action="/submit" class="ContactForm">
-                <h2>Interesado en contactarme?</h2>
-                <input type="text" placeholder="Déjame tu correo electronico aquí">
-                <button>Enviar</button>
-            
-            </form>
+            <form name="submit-form" id="submit-form">
+                <label for="name" style="color: white;">Nombre:</label>
+                <input name="Nombres" type="text" placeholder="Nombre" required>
+                <label for="name" style="color: white;">Mensaje:</label>
+                <textarea name="Mensajes" type="text" placeholder="Mensaje" required></textarea>
+                <label for="name" style="color: white;">Email:</label>
+                <input name="Email" type="email" placeholder="Email" required>
+                <button type="submit" >Enviar</button>
+                <!-- <button type="reset" id="limpiar" hidden=""></button> -->
+                <!-- <input type="reset" value="Limpiar formulario"> -->
+              </form>
         </div>
     </section> 
     <!-- <div class="video">
@@ -129,8 +134,16 @@
         </div>        
     </footer>
     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxWR5Dz-NXbNC6elw7uJE67f9kRd9nbs68k4aujXU8h1Zs7Bp0/exec'
+        const form = document.forms['submit-form']
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response) , document.getElementById("submit-form").reset())
+            .catch(error => console.error('Error!', error.message))
+        })
         // console.log(document.querySelector('.menu'));
-        const ipad = window.matchMedia('screen and (max-width: 767px)')
+        const ipad = window.matchMedia('screen and (min-width: 767px)')
         const menu=document.querySelector('.menu');
         const burgerButton = document.querySelector('#burger-menu');
         // burgerButton.addEventListener('click', hideShow);
@@ -152,6 +165,7 @@
                 menu.classList.add('is-active');
             }
         }
+        
     </script>
 </body>
 </html>
