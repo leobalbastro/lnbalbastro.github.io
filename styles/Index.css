@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi&display=swap');
+
+HTML{
+    font-family: 'Noto Sans Kawi', sans-serif;
+}
+
+.purpleText{
+    color:#7D11F9;
+}
+
+.enlace:hover{
+    color:#7D11F9 !important;
+}
+.enlace{
+    color:#3F3A64;
+}
+
+.presentation{
+    background: rgba(147, 107, 232, 0.05);
+}
+
+.b1{
+    background-color: #7D11F9;
+    color: white;
+    font-size: medium
+}
+.b2{
+    color: #7D11F9;
+    background-color: transparent;
+    border: 1px solid #7D11F9;
+    font-size: medium
+}
+
+.subText{
+    color: gray;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+.title{
+    margin:0 ;
+    font-size: 4rem;
+}
+.description{
+    color: #696969;
+}
+.mainContent{
+    justify-content: center;
+    align-items: center;
+}
