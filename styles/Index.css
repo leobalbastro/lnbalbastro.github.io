@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kawi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Kawi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-HTML{
-    font-family: 'Noto Sans Kawi', sans-serif;
+
+*{
+    font-family: 'Jost', sans-serif;
 }
 
 .purpleText{
@@ -47,4 +49,81 @@ HTML{
 .mainContent{
     justify-content: center;
     align-items: center;
+}
+.sectNav{
+    width: 30%;
+    align-items: flex-start;
+    font-size: larger;
+}
+.navBar{
+    box-shadow: 0 0.15rem 0.5rem 0 rgba(0, 0, 0, 0.07);
+}
+
+.pDescr{
+    background-color: rgba(147, 107, 232, 0.05);
+}
+.resumee{
+    width: 50%;
+    font-size: x-large;
+}
+.sectInfo{
+    color: #8C89A2;
+    font-weight: 500;
+    font-size: medium;
+}
+.photoVector{
+    /* background-color: #3F3A64; */
+    width: 100%;
+    text-align: right;
+    align-items: center;
+}
+.vectorSize{
+    width: 40rem;
+}
+.mainButton{
+    border-color: #7D11F9;
+    color: #7D11F9;
+
+}
+.mainButton:hover{
+    background-color: #7D11F9 !important;
+    color: white;
+}
+
+.title{
+    font-weight: 300;
+}
+
+.title span{
+    font-weight: 600;
+}
+.subTitle{
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #696969;
+}
+.certText{
+    color: rgba(232, 62, 140, 1);
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1rem;
+}
+.aboutDesc{
+    font-weight: 400;
+}
+.imgContainer{
+    padding-right: 0;
+}
+.bodyImg{
+    width: 70%;
+    justify-content: left;
+}
+.portSect{
+    background-color: rgba(147, 107, 232, 0.05);
+}
+.footer{
+    border-top: 0.1rem solid rgba(221, 221, 221, 1);
+}
+.skillSect{
+    background-color:rgba(147, 107, 232, 0.05);
 }

@@ -7,82 +7,100 @@
     <title>Home Page</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid justify-content-center">
-          <a class="navbar-brand" href="#">
-            <div class="d-flex align-items-center fs-3">
-                <i class="fa-solid fa-code px-1 purpleText"></i>
-                <p class="my-0 px-1 purpleText">Leonardo Balbastro</p>
-                <p class="my-0 px-1 fw-bold">DevWeb</p>
-            </div>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="container-fluid d-flex justify-content-center">
-            <a href="./index.html" class="enlace px-3 text-decoration-none text-secondary fw-bold">Inicio</a>
-            <a href="#" class=" px-3 text-decoration-none text-secondary fw-bold enlace">Sobre mi</a>
-            <a href="#" class=" px-3 text-decoration-none text-secondary fw-bold enlace">Proyectos</a>
-            <a href="#" class=" px-3 text-decoration-none text-secondary fw-bold enlace">Certificaciones</a>
-            <a href="#" class=" px-3 text-decoration-none text-secondary fw-bold enlace">Contacto</a>
-        </div>
-      </nav>
+  <div class="col-xl-12 text-center d-flex justify-content-between px-5 py-3 bg-white navBar">
+    <div class="sectLogo d-flex align-items-center">
+      <i class="fa-solid fa-code fs-2 mx-1 purpleText"></i> 
+      <h2 class=" purpleText mx-1">Leonardo Balbastro</h2>
+      <h2 class="fw-bold">DevWeb</h2>
+    </div>
+    <div class="sectNav align-items-center mx-2 d-flex justify-content-between">      
+        <a href="#" class="enlace text-decoration-none list-group-item">Inicio</a>
+        <a href="#" class="enlace text-decoration-none list-group-item">Sobre Mi</a>
+        <a href="#" class="enlace text-decoration-none list-group-item">Proyectos</a>
+        <a href="#" class="enlace text-decoration-none list-group-item">Certificaciones</a>
+        <a href="#" class="enlace text-decoration-none list-group-item">Contacto</a>
+    </div>
+  </div>
+  <div class="col-xl-12 px-5 pDescr d-flex">
+    <div class="resumee py-3 w-50">
+      <span class="sectInfo">HOLA</span>
+      <h2 class="fs-1 title">Yo soy <span>Leonardo Balbastro</span> Programador Fullstack Web</h2>
+      <p class="subTitle">
+        Un estudiante terciario altamente organizado, innovador y orientado a metas, con habilidades excepcionales en resolución de problemas y liderazgo, junto con una pasión por explorar el vasto mundo de la programación, enfrentando desafíos variados.
+      </p>
+      <a href="#" class="text-decoration-none certText">Ver Certificaciones</a>
+      <br>
+      <div class="py-5 w-100">
+        <input type="button" value="Ver Proyectos" class="button border-1 bg-transparent p-2 rounded mainButton px-3 fs-5">
+        <input type="button" value="Ir a GitHub" class="button border-1 bg-transparent p-2 rounded mainButton px-3 fs-5">
+      </div>
+    </div>
+    <div class="photoVector w-50">
+      <img src="./imgs/photo.svg.svg" alt="vector" class="img-fluid vectorSize">
+    </div>
+  </div>
+  <div class="col-xl-12 text-left p-5 d-flex">
+    <div class="imgContainer">
+      <img src="./imgs/myphoto.jpg.svg" alt="personal photo image" class="img-fluid">
+    </div>
+    <div class="bodyImg mx-4">
+      <span class="sectInfo ">SOBRE MI</span>
+      <h2 class="aboutDesc">Leonardo Balbastro</h2>
+      <p class="subTitle">Enfrento desafíos continuamente de frente, buscando el progreso y la eficiencia, así como acortar plazos de entrega. Mis conocimientos y mi experiencia me ayuda a construir software de mejor calidad y la busqueda continua del conocimiento me permite no quedarme atrás con las tecnologias que van surgiendo.
+      Considero que no hay problema que no tenga solucion ni software que sea completamente estable, la creatividad para superar estos problemas es lo que considero que puedo aportar de manera personal, y para ello poseo las herramientas necesarias.
+      En lo personal me gusta rodearme de gente que permita el crecimiento personal, asi como aportar diferentes puntos de vista que permitan el crecimiento intelectual, soy una persona amable, simpática y siempre dispuesto a ayudar a quien me pida ayuda.
+      Mis puntos debiles son el miedo al fracaso, el sesgo cognitivo y mi obstinación.
+      </p>
+      <button type="button" class="bg-transparent button border-1 rounded p-3 my-3 px-5 mainButton fw-bold"><i class="fa-solid fa-cloud-arrow-down"></i> Descargar CV</button>
+    </div>
+  </div>
+  <div class="col-xl-12 text-left portSect px-5 py-3">
+    <div>
+      <span class="sectInfo">PORTAFOLIO PERSONAL</span>
+      <h2>Transformando ideas en una realidad.</h2>
+      <p class="subTitle">Mi carrera personal comienza en 2019, me he especializado en tecnologias pertenecientes a javascript y he consolidado mi conocimiento a través de multiples proyectos que muchos no han dado a luz, pero que sin duda representa una experiencia de aprendizaje que he superado y han dado los cimientos para que hoy en dia pueda convertir las ideas de clientes o personales en una realidad.</p>
+    </div>
+    <button type="button" class="bg-transparent button border-1 rounded p-3 my-3 px-3 mainButton fw-bold"> <i class="fa-brands fa-linkedin"></i> LinkedIn</button>
+  </div>
+  <div class="col-xl-12 px-5 text-center">
+    <h5 class="sectInfo">Experiencia</h5>
+    <h3>Mi camino a través del tiempo</h3>
+    <div class="carousel d-flex justify-content-between">
+        <div class="1">a</div>
+        <div class="2">b</div>
+        <div class="3">c</div>
+    </div>
+  </div>
+  <div class="col-xl-12 text-center my-3  py-3 skillSect">
+    <h5 class="sectInfo py-3">Conocimientos Principales</h5>
+    <h3 class="py-3">Tecnologias de desarrollo</h3>
+    <div class="container py-3 col-12 d-flex justify-content-between col-12 fs-2 fw-bold">
+      
+      <i class="fa-brands col-1 fa-java"><p class="fs-5">Java</p></i>
+      <i class="fa-brands col-1 fa-node-js"><p class="fs-5">NodeJs</p></i>
+      <i class="fa-brands col-1 fa-react"><p class="fs-5">React</p></i>
+      <i class="fa-brands col-1 fa-js"><p class="fs-5">Javascript</p></i>
+      <i class="fa-brands col-1 fa-html5"><p class="fs-5">HTML5</p></i>
+      <i class="fa-brands col-1 fa-css3-alt"><p class="fs-5">CSS3</p></i>
+      <i class="fa-brands col-1 fa-bootstrap"><p class="fs-5">Bootstrap</p></i>
+    </div>
+  </div>
+  <div class="col-xl-12 text-center">Certificaciones</div>
+  <div class="col-xl-12 footer align-items-center d-flex justify-content-between p-5">
+    <div class="BrandSect my-auto fs-5">
+      <h5 class="align-items-center mb-0" >© LB <span class="fw-bold">DevWeb</span>. Diseñado por <a href="#">Vanina Balbastro</a> , Desarrollado por Leonardo Balbastro.</h5>
+    </div>
+    <div class="redes fs-5">
+      <a href="#"class="text-decoration-none text-secondary mx-3"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="#"class="text-decoration-none text-secondary mx-3"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"class="text-decoration-none text-secondary mx-3"><i class="fa-brands fa-x-twitter"></i></a>
+    </div>
+  </div>
 
-      <body>
-        <div class="presentation">
-          <div class="mainContent container-fluid d-flex p-5">
-            <div class="personalData w-50">
-              <p class="subText mx-3">HOLA</p>
-              <h2 class="title mx-3">Yo soy <span class="fw-bold">Leonardo Balbastro</span> DevWeb</h2>
-              <p class="description mx-3">Soy un profesional el cual valora la eficiencia y el desempeño, junto con la calidad para entregar un producto con el que el cliente se sienta satisfecho. <br>
-              Mi formación a través de los años y la experiencia en una compañia piramidal me ha dado la experiencia para saber cuales son los pasos correctos a tratar con el cliente. <br>
-              Puedes ver alguno de los proyectos en los que he trabajado a lo largo de los años en mi portafolio personal o bien puedes observar mi educacion a través de los certificados. <br>
-            </p>
-            <a href="#" class="mx-3">Ver Certificados</a><br>
-            <div class="container p-0 my-4 mx-3">
-              <button type="button" class="border rounded-3 px-4 py-3 b1">Ver Proyectos</button>
-              <button type="button" class="rounded-3 px-4 py-3 b2">Ir a GitHub</button>
-            </div>
-            </div>
-            <div class="imagen w-50 text-center">
-              <img src="./imgs/photo.svg.png" class="img-fluid" alt="Prototipo">
-            </div>
-          </div>
-        </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-        <script src="../scripts/index.js"></script>
-      </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="../scripts/index.js"></script>
     <script src="https://kit.fontawesome.com/d4e1b9f057.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

@@ -13,4 +13,3 @@ TO-DO List:
     - Agregarle interaccion
     - Arreglar los problemas de las imagenes que se ven enormes
     - Sacar JQuery y reemplazarlo por Javascript Vanilla
-    - 
