@@ -1,5 +1,5 @@
 function irALinkedIn(){
-    window.open("https://www.linkedin.com/", "_blank");
+    window.open("https://www.linkedin.com/in/leobalbastro/", "_blank");
 
 }
 function irAGitHub(){
