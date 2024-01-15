@@ -127,3 +127,26 @@
 .skillSect{
     background-color:rgba(147, 107, 232, 0.05);
 }
+
+.card{
+    width: 22rem;
+}
+
+.coloredButton{
+    border: 0;
+    border-bottom: 0.2rem solid #69696957;
+}
+
+.coloredButton:hover{
+    border: 0;
+    border-bottom: 0.2rem solid #7D11F9;
+}
+.sectSkills{
+    width: 16rem;
+}
+
+.buttonsCarousel{
+    background-color: #7D11F9;
+    border-radius: 50%;
+    padding: 1rem;
+}
