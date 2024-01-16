@@ -169,3 +169,25 @@
 .no-resize{
     resize: none;
 }
+.titleCall{
+    font-size: 1rem;
+}
+.subTitleCallNumber{
+    font-size: 0.9rem;
+}
+.formSection i
+{
+    color: #7D11F9;
+}
+.formSection input{
+    border-color: transparent ;
+    background-color: rgba(147, 107, 232, 0.05);
+}
+.formSection textarea{
+    
+    border-color: transparent !important;
+    background-color: rgba(147, 107, 232, 0.05);
+}
+.buttonInputForm{
+    border-color: #7D11F9 !important;
+}
