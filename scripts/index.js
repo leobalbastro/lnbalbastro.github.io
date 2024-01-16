@@ -22,3 +22,19 @@ function sendMessage(){
   console.log("Mensaje Enviado")
 
 }
+
+let paginaActual = window.location.href;
+// console.log(paginaActual)
+const enlaces = Array.from(document.querySelectorAll('.sectNav a'));
+
+if(paginaActual.toString().includes("index.html")){
+  enlaces[0].style.color='#7D11F9';
+}else if(paginaActual.toString().includes("about.html")){
+  enlaces[1].style.color='#7D11F9';
+}else if(paginaActual.toString().includes("projects.html")){
+  enlaces[2].style.color='#7D11F9';
+}else if(paginaActual.toString().includes("certifications.html")){
+  enlaces[3].style.color='#7D11F9';
+}else if(paginaActual.toString().includes("contact.html")){
+  enlaces[4].style.color='#7D11F9';
+}
