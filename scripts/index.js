@@ -34,7 +34,7 @@ function redirectToProjects() {
   
 }
 
-if(paginaActual.toString().includes("index.html")){
+if(paginaActual.toString().includes("index.html") || paginaActual.toString().endsWith("/")){
   enlaces[0].style.color='#7D11F9';
 }else if(paginaActual.toString().includes("about.html")){
   enlaces[1].style.color='#7D11F9';
