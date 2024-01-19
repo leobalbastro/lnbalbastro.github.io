@@ -7,7 +7,9 @@ function irAGitHub(){
 
 }
 
-function sendMessage(){
+function validarFormulario(event){
+
+  event.preventDefault();
   // Obtener referencia al formulario
       // Seleccionar todos los elementos de tipo input, textarea y select que no son botones
   var elementos = document.querySelectorAll('form input:not([type="button"]), form textarea, form select');
@@ -27,6 +29,11 @@ let paginaActual = window.location.href;
 // console.log(paginaActual)
 const enlaces = Array.from(document.querySelectorAll('.sectNav a'));
 
+function redirectToProjects() {
+  window.location.href = 'projects.html'
+  
+}
+
 if(paginaActual.toString().includes("index.html")){
   enlaces[0].style.color='#7D11F9';
 }else if(paginaActual.toString().includes("about.html")){
@@ -37,4 +44,9 @@ if(paginaActual.toString().includes("index.html")){
   enlaces[3].style.color='#7D11F9';
 }else if(paginaActual.toString().includes("contact.html")){
   enlaces[4].style.color='#7D11F9';
+}
+
+function descargarCV(){
+  const pdfURL = './docs/Leonardo Balbastro CV.docx';
+  
 }

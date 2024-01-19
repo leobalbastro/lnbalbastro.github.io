@@ -81,8 +81,10 @@
     width: 40rem;
 }
 .mainButton{
+    border: 0.1rem solid red;
     border-color: #7D11F9;
     color: #7D11F9;
+    text-decoration: none;
 
 }
 .mainButton:hover{
@@ -190,4 +192,10 @@
 }
 .buttonInputForm{
     border-color: #7D11F9 !important;
+}
+.footerSect{
+    width: 30%;
+}
+.sub{
+    font-size: 1rem;
 }

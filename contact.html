@@ -25,7 +25,7 @@
     </div>
     <div class="w-100 container-fluid text-center p-5 contactHeader">
         <h2 class="contactTitle">Contactame</h2>
-        <a href="" class="contactSubtitle purpleText text-decoration-none ">Contacto</a> <span class="contactSubtitle">>
+        <a href="" class="contactSubtitle purpleText text-decoration-none ">Inicio</a> <span class="contactSubtitle">>
             Contactame</span>
     </div>
     <div class="formSection d-flex py-3 px-5 col-xl-12">
@@ -70,7 +70,7 @@
         <input type="button" value="Enviar mensaje" class="col-6">
     </div> -->
         <div class="container mt-5 col-xl-5">
-            <form action="submit" method="post" class="row g-3 miForm">
+            <form onsubmit="return validarFormulario()" class="row g-3 miForm">
                 <div class="col-md-6">
                     <input type="text" name="nombre" id="nombre" class="form-control mb-3" placeholder="Nombre" required>
                 </div>
@@ -87,8 +87,8 @@
                     <textarea name="mensaje" id="mensaje" class="form-control mb-3 no-resize" rows="5" maxlength="255" required></textarea>
                 </div>
                 <div class="col-12 text-end">
-                    <input type="button" class="buttonInputForm border-1 bg-transparent p-2 rounded mainButton px-3"
-                        onclick="sendMessage()" value="Enviar mensaje" required>
+                    <input type="submit" class="buttonInputForm border-1 bg-transparent p-2 rounded mainButton px-3"
+                        value="Enviar mensaje">
                 </div>
             </form>
         </div>
