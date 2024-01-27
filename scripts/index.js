@@ -12,10 +12,10 @@ function validarFormulario(event){
   event.preventDefault();
   // Obtener referencia al formulario
       // Seleccionar todos los elementos de tipo input, textarea y select que no son botones
-  var elementos = document.querySelectorAll('form input:not([type="button"]), form textarea, form select');
+  let elementos = document.querySelectorAll('form input:not([type="button"]), form textarea, form select');
 
   // Convertir la NodeList a un array para facilitar su manipulación
-  var elementosArray = Array.from(elementos);
+  let elementosArray = Array.from(elementos);
 
   // Hacer algo con los elementos seleccionados, por ejemplo, cambiar su color de fondo
   elementosArray.forEach(function(elemento) {
@@ -34,7 +34,7 @@ function redirectToProjects() {
   
 }
 
-if(paginaActual.toString().includes("index.html") || paginaActual.toString().endsWith("/")){
+if(paginaActual.toString().includes("index.html") || paginaActual.toString().endsWith("/") || paginaActual.toString().includes("index_v2.html")){
   enlaces[0].style.color='#7D11F9';
 }else if(paginaActual.toString().includes("about.html")){
   enlaces[1].style.color='#7D11F9';
