@@ -3,39 +3,96 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/Index.css">
-  <title>Acerca de mí</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <link rel="stylesheet" href="./styles/Index.css">
+  <title>Proyectos</title>
 </head>
 
 <body>
-  <div class="col-xl-12 text-center d-flex justify-content-between px-5 py-3 bg-white navBar">
-    <div class="sectLogo d-flex align-items-center">
-      <i class="fa-solid fa-code fs-2 mx-1 purpleText"></i>
-      <h2 class=" purpleText mx-1">Leonardo Balbastro</h2>
-      <h2 class="fw-bold">DevWeb</h2>
+  <nav class="navbar container-fluid navbar-expand-lg navbar-light px-3">
+    <div class="d-md-flex w-100 justify-content-between d-block">
+        <!-- Logo -->
+        <div class="navbar-brand d-md-flex flex d-none">
+            <i class="fa-solid fa-code fs-2 mx-1 purpleText my-auto"></i>
+            <h2 class="mb-0 mx-1 purpleText">Leonardo Balbastro</h2>
+            <h2 class="mb-0 mx-1 text-black fw-bold">DevWeb</h2>
+        </div>
+
+        <!-- Botón de hamburguesa para dispositivos pequeños -->
+        <button class="navbar-toggler position-absolute bg-white top-0 end-0 mt-2 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Elementos del navbar -->
+        <div class="collapse navbar-collapse px-3 mb-3 mb-lg-0" id="navbarNav">
+            <ul class="navbar-nav ms-auto sectNav">
+                <li class="nav-item">
+                    <a class="enlace text-decoration-none" aria-current="page" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="enlace text-decoration-none" href="./about.html">Sobre mi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="enlace text-decoration-none" href="./projects.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="enlace text-decoration-none" href="./contact.html">Contacto</a>
+                </li>
+                <li class="nav-item position-absolute bg-white top-0 end-0 mt-2 me-2 d-lg-none">
+                    <button class="btn-close btn-close-black  p-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-label="Close"></button>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="sectNav align-items-center mx-2 px-5 d-flex justify-content-between">
-      <a href="./index.html" class="enlace text-decoration-none list-group-item">Inicio</a>
-      <a href="./about.html" class="enlace text-decoration-none list-group-item">Sobre Mi</a>
-      <a href="./projects.html" class="enlace text-decoration-none list-group-item">Proyectos</a>
-      <a href="./contact.html" class="enlace text-decoration-none list-group-item">Contacto</a>
-    </div>
-  </div>
-  <div class="w-100 container-fluid text-center p-5 contactHeader">
-    <h2 class="contactTitle">Proyectos</h2>
-    <a href="./index.html" class="contactSubtitle purpleText text-decoration-none ">Inicio</a> <span
-      class="contactSubtitle">>
+</nav>
+
+<div class="container-fluid text-center p-5 contactHeader">
+  <h2 class="contactTitle">Proyectos</h2>
+  <a href="./index.html" class="contactSubtitle purpleText text-decoration-none ">Inicio</a> <span class="contactSubtitle">>
       Proyectos</span>
-  </div>
-  <div class="projectSect text-center my-5">
-    <h5 class="sectInfo">GALERIA DE PROYECTOS</h5>
-    <h3>Explora algunos de los proyectos que he desarrollado.</h3>
-    <div class="w-100 px-5">
+</div>
+<section class="projDescr col-12 row text-center container-fluid">
+  <div class="resumee p-3 col-12">
+      <span class="sectInfo">GALERIA DE PROYECTOS</span>
+      <h2 class="fs-1 title">Explora algunos de los proyectos que he desarrollado</h2>
+</section>
 
+<section class="container-fluid col-12 row p-5">
+  <div class="card p-1 border rounded col-5" >
+    <img src="./imgs/gulubu.png" class="card-img-top img-fluid" alt="gulubu preview">
+    <div class="card-body">
+      <h5 class="card-title">Gulubu</h5>
+      <h3 class="subTitle">Proyecto Educativo</h5>
+      <p class="card-text">Proyecto hecho en grupo en el curso RollingCode Fullstack Developer con HTML, CSS, y Bootstrap</p>
+      <a href="https://gulubu.netlify.app" class="mainButton rounded" target="_blank">Ir al inicio del sitio</a>
     </div>
   </div>
+  <div class="col-2"></div>
+  <div class="card p-1 border rounded col-5">
+    <img src="./imgs/personalSite.png" class="card-img-top img-fluid" alt="gulubu preview">
+    <div class="card-body">
+      <h5 class="card-title">Sitio Personal</h5>
+      <h3 class="subTitle">Proyecto personal</h5>
+        <p class="card-text">Proyecto personal hecho en conjunto con una diseñadora, realizado con HTML, CSS, Javascript y Bootstrap</p>
+        <a href="./index.html" class="mainButton rounded">Ir al inicio del sitio</a>
+    </div>
+  </div>
+</section>
 
+<section class="footer col-12 align-items-center d-flex justify-content-between p-lg-5 p-2">
+  <div class="BrandSect col-lg-10 col-12 fs-5 align-items-center">
+    <h5 class="align-items-center mb-0">© LB <span class="fw-bold">DevWeb</span>. Diseñado por <a href="#">Vanina
+        Balbastro</a> , Desarrollado por <span class="purpleText">Leonardo Balbastro</span>.</h5>
+  </div>
+  <div class="redes col-lg-2 d-none d-lg-block text-lg-center fs-5">
+    <a href="https://www.instagram.com/leobalbastro/" target="_blank"
+      class="text-decoration-none text-secondary mx-3"><i class="fa-brands fa-square-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/leobalbastro/" target="_blank"
+      class="text-decoration-none text-secondary mx-3"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+</section>
 
 
 
