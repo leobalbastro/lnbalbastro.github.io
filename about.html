@@ -4,33 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/Index.css">
-    <title>Proyectos</title>
+    <link rel="stylesheet" href="./styles/Index.css">
+    <title>Sobre mi</title>
 </head>
 
 <body>
-    <div class="col-xl-12 text-center d-flex justify-content-between px-5 py-3 bg-white navBar">
-        <div class="sectLogo d-flex align-items-center">
-            <i class="fa-solid fa-code fs-2 mx-1 purpleText"></i>
-            <h2 class=" purpleText mx-1">Leonardo Balbastro</h2>
-            <h2 class="fw-bold">DevWeb</h2>
+    <nav class="navbar container-fluid navbar-expand-lg navbar-light px-3">
+        <div class="d-md-flex w-100 justify-content-between d-block">
+            <!-- Logo -->
+            <div class="navbar-brand d-md-flex flex d-none">
+                <i class="fa-solid fa-code fs-2 mx-1 purpleText my-auto"></i>
+                <h2 class="mb-0 mx-1 purpleText">Leonardo Balbastro</h2>
+                <h2 class="mb-0 mx-1 text-black fw-bold">DevWeb</h2>
+            </div>
+
+            <!-- Botón de hamburguesa para dispositivos pequeños -->
+            <button class="navbar-toggler position-absolute bg-white top-0 end-0 mt-2 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Elementos del navbar -->
+            <div class="collapse navbar-collapse px-3 mb-3 mb-lg-0" id="navbarNav">
+                <ul class="navbar-nav ms-auto sectNav">
+                    <li class="nav-item">
+                        <a class="enlace text-decoration-none" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="enlace text-decoration-none" href="./about.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="enlace text-decoration-none" href="./projects.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="enlace text-decoration-none" href="./contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item position-absolute bg-white top-0 end-0 mt-2 me-2 d-lg-none">
+                        <button class="btn-close btn-close-black  p-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-label="Close"></button>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="sectNav align-items-center mx-2 px-5 d-flex justify-content-between">
-            <a href="./index.html" class="enlace text-decoration-none list-group-item">Inicio</a>
-            <a href="./about.html" class="enlace text-decoration-none list-group-item">Sobre Mi</a>
-            <a href="./projects.html" class="enlace text-decoration-none list-group-item">Proyectos</a>
-            <a href="./contact.html" class="enlace text-decoration-none list-group-item">Contacto</a>
-        </div>
-    </div>
-    <div class="w-100 container-fluid text-center p-5 contactHeader">
-        <h2 class="contactTitle">Sobre mi</h2>
-        <a href="./index.html" class="contactSubtitle purpleText text-decoration-none ">Inicio</a> <span class="contactSubtitle">>
-            Sobre mi</span>
-    </div>
-    <div class="col-xl-12 text-left p-5 d-flex">
-        <div class="imgContainer">
+    </nav>
+    <section class="container-fluid text-center p-5 contactHeader">
+            <h2 class="contactTitle">Sobre mi</h2>
+            <a href="./index.html" class="contactSubtitle purpleText text-decoration-none ">Inicio</a> <span class="contactSubtitle">>
+                Sobre mi</span>
+    </section>
+    <section class="about my-3 container-fluid">
+        <!-- <div class="imgContainer">
             <img src="./imgs/myphoto.jpg.svg" alt="personal photo image" class="img-fluid">
-        </div>
+        </div> -->
         <div class="bodyImg mx-4">
             <span class="sectInfo ">SOBRE MI</span>
             <h2 class="aboutDesc">Leonardo Balbastro</h2>
@@ -49,55 +74,56 @@
 
                 <hr class="border rounded border-secondary">
             </p>
-            <div class="w-100 col-xl-8 row">
-                <div class="nombre d-flex col-xl-6">
+            <div class="w-100 col-12 row">
+                <div class="nombre d-flex col-lg-6 col-12 justify-content-center justify-content-lg-start">
                     <p class="fw-bold me-2">Nombre:</p>
                     <p>Leonardo Balbastro</p>
                 </div>
-                <div class="edad d-flex  col-xl-6">
+                <div class="edad d-flex  col-lg-6 col-12 justify-content-center justify-content-lg-start">
                     <p class="fw-bold me-2">Edad:</p>
                     <p>33 años</p>
                 </div>
-                <div class="ubicacion d-flex col-xl-6">
+                <div class="ubicacion d-flex col-lg-6 col-12 justify-content-center justify-content-lg-start">
                     <p class="fw-bold me-2">Ubicación:</p>
                     <p>Buenos Aires, Argentina</p>
                 </div>
-                <div class="email d-flex col-xl-6">
+                <div class="email d-flex col-lg-6 col-12 justify-content-center justify-content-lg-start">
                     <p class="fw-bold me-2">Email:</p>
                     <a class="text-decoration-none purpleText">leonardonbalbastro@gmail.com</a>
                 </div>
             </div>
-            <div class="d-flex align-items-center justify-content-between footerSect">
-                <a href="./docs/Leonardo Balbastro CV.docx" class="bg-transparent rounded p-3 my-3 px-5 mainButton fw-bold"><i
-                        class="fa-solid fa-cloud-arrow-down" download></i> Descargar CV</a>
-                <a href="https://www.instagram.com/leobalbastro/" target="_blank"
-                    class="text-decoration-none text-danger mx-3 fs-1"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/leobalbastro/" target="_blank"
-                    class="text-decoration-none text-primary mx-3 fs-1"><i class="fa-brands fa-linkedin"></i></a>
+            <div class="col-12 align-items-center row">
+                <div class="col-6"><a href="./docs/Leonardo Balbastro CV.docx" class="bg-transparent rounded mainButton fw-bold"><i
+                    class="fa-solid fa-cloud-arrow-down" download></i> Descargar CV</a></div>
+                <div class="col-3"><a href="https://www.instagram.com/leobalbastro/" target="_blank"
+                    class="text-decoration-none text-danger mx-3 fs-1"><i class="fa-brands fa-square-instagram"></i></a></div>
+                <div class="col-3"><a href="https://www.linkedin.com/in/leobalbastro/" target="_blank"
+                    class="text-decoration-none text-primary mx-3 fs-1"><i class="fa-brands fa-linkedin"></i></a></div>
             </div>
         </div>
     </div>
-    <div class="w-100 p-5 welcomeSect">
+    </section>
+    <section class="container-fluid p-5 welcomeSect">
         <h5 class="sectInfo fs-5">Bienvenido</h5>
         <h3>Brindando servicio de calidad</h3>
         <p class="subTitle">Capacitacion continua, Software de Calidad y Estabilidad son los pilares fundamentales de mi persona. Éstas caracteristicas dictaminan mi valor como desarrollador web y al mismo tiempo describen que clase de persona soy. Las tecnologias que utilizo me ayudan a poder brindar un servicio personalizado, flexible, moderno y actual, a diferencia de otras herramientas que tienen una plantilla en la cual se elige como modelo.</p>
-        <div class="d-flex justify-content-between p-5">
+        <div class="col-12 row px-5 py-3 ">
 
-            <div class="d-flex align-items-center">
+            <div class="col-12 col-lg-4 align-items-center mb-3 text-center ">
                 <i class="fa-solid fa-code fs-3 mx-3 purpleText"></i>
                 <div class="align-items-center">
-                    <h5 class=" mb-0">Codigo Estable</h5>
-                    <p class=" mb-0">Apto para todo tipo de pantallas</p>
+                    <h5 class=" mb-0">Codigo Limpio</h5>
+                    <p class=" mb-0">Facilmente puede ser transferido a otras personas</p>
                 </div>
             </div>
-            <div class="d-flex align-items-center">
+            <div class="col-12 col-lg-4 align-items-center mb-3 text-center ">
                 <i class="fa-solid fa-mobile-screen fs-3 mx-3 purpleText"></i>
                 <div class="align-items-center">
                     <h5 class=" mb-0">Diseño Responsive</h5>
                     <p class=" mb-0">Apto para todo tipo de pantallas</p>
                 </div>
             </div>
-            <div class="d-flex align-items-center">
+            <div class="col-12 col-lg-4 align-items-center mb-3 text-center">
                 <i class="fa-solid fa-sliders fs-3 mx-3 purpleText"></i>
                 <div class="align-items-center">
                     <h5 class=" mb-0">Personalizable a cada necesidad</h5>
@@ -105,118 +131,21 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="text-center">
-        <h5 class="subTitle fs-5 mt-5 mb-3">Galeria de Certificados Profesionales.</h5>
-        <h3 class="mb-3 fw-normal">Estos conocimientos avalan mis habilidades, así como la experiencia a lo largo de los años.</h3>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
-            </div>
-            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img src="./imgs/diploma-backend-nodejs.svg" class="img-fluid" alt="Imagen 1">
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img src="./imgs/diploma-basico-javascript.svg" class="img-fluid" alt="Imagen 2">
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img src="./imgs/diploma-basico-programacion.svg" class="img-fluid" alt="Imagen 1">
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img src="./imgs/diploma-bd.svg" class="img-fluid" alt="Imagen 2">
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img src="./imgs/diploma-computacion-basica.svg" class="img-fluid" alt="Imagen 1">
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img src="./imgs/diploma-csharp-introduccion.svg" class="img-fluid" alt="Imagen 2">
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img src="./imgs/diploma-frontend-developer.svg" class="img-fluid" alt="Imagen 1">
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img src="./imgs/diploma-fundamentos-node.svg" class="img-fluid" alt="Imagen 2">
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img src="./imgs/diploma-git-github.svg" class="img-fluid" alt="Imagen 1">
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img src="./imgs/diploma-javascript-navegador.svg" class="img-fluid" alt="Imagen 2">
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img src="./imgs/diploma-jschallenge-fase1.svg" class="img-fluid" alt="Imagen 1">
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img src="./imgs/diploma-jschallenge-fase2.svg" class="img-fluid" alt="Imagen 2">
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="d-flex align-items-center justify-content-center">
-                    <img src="./imgs/diploma-python-basico.svg" class="img-fluid" alt="Imagen 1">
-                  </div>
-                </div>
-                
-                <!-- Repite esto para las otras imágenes -->
-              </div>
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon buttonsCarousel" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon buttonsCarousel" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </div>
-    <div class="col-xl-12 footer align-items-center d-flex justify-content-between p-5 mt-3">
-        <div class="BrandSect my-auto fs-5">
+    <section class="footer col-12 align-items-center d-flex justify-content-between p-lg-5 p-2">
+        <div class="BrandSect col-lg-10 col-12 fs-5 align-items-center">
           <h5 class="align-items-center mb-0">© LB <span class="fw-bold">DevWeb</span>. Diseñado por <a href="#">Vanina
               Balbastro</a> , Desarrollado por <span class="purpleText">Leonardo Balbastro</span>.</h5>
         </div>
-        <div class="redes fs-5">
-          <a href="https://www.instagram.com/leobalbastro/" target="_blank" class="text-decoration-none text-secondary mx-3"><i class="fa-brands fa-square-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/leobalbastro/"  target="_blank" class="text-decoration-none text-secondary mx-3"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="redes col-lg-2 d-none d-lg-block text-lg-center fs-5">
+          <a href="https://www.instagram.com/leobalbastro/" target="_blank"
+            class="text-decoration-none text-secondary mx-3"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/leobalbastro/" target="_blank"
+            class="text-decoration-none text-secondary mx-3"><i class="fa-brands fa-linkedin"></i></a>
         </div>
-      </div>
+</section>
+
 
 
     <script src="./scripts/index.js"></script>
@@ -227,5 +156,3 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
-
-</html>

@@ -34,9 +34,9 @@ function redirectToProjects() {
   
 }
 
-if(paginaActual.toString().includes("index.html") || paginaActual.toString().endsWith("/") || paginaActual.toString().includes("index_v2.html")){
+if(paginaActual.toString().includes("index.html") || paginaActual.toString().endsWith("/")){
   enlaces[0].style.color='#7D11F9';
-}else if(paginaActual.toString().includes("about.html")){
+}else if(paginaActual.toString().includes("about.html") || paginaActual.toString().includes("about_v2.html")){
   enlaces[1].style.color='#7D11F9';
 }else if(paginaActual.toString().includes("projects.html")){
   enlaces[2].style.color='#7D11F9';

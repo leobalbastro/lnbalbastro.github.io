@@ -85,10 +85,11 @@
     width: 40rem;
 }
 .mainButton{
-    border: 0.1rem solid red;
-    border-color: #7D11F9;
+    border: 0.1rem solid #7D11F9;
     color: #7D11F9;
     text-decoration: none;
+    padding: 0.5rem;
+    font-size: 0.8rem;
 
 }
 .mainButton:hover{
@@ -235,5 +236,19 @@
     }
     .footer{
         text-align: center;
+    }
+    .carousel-control-prev {
+        background-color: transparent !important;
+        border: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        opacity: 0 !important;
+    }
+    .carousel-control-next {
+        background-color: transparent !important;
+        border: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        opacity: 0 !important;
     }
   }
