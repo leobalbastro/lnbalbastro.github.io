@@ -4,108 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/Index.css">
+    <link rel="stylesheet" href="./styles/Index.css">
     <title>Contacto</title>
 </head>
 
-<body>
-    <div class="col-xl-12 text-center d-flex justify-content-between px-5 py-3 bg-white navBar">
-        <div class="sectLogo d-flex align-items-center">
-            <i class="fa-solid fa-code fs-2 mx-1 purpleText"></i>
-            <h2 class=" purpleText mx-1">Leonardo Balbastro</h2>
-            <h2 class="fw-bold">DevWeb</h2>
+<body>    
+    <nav class="navbar container-fluid navbar-expand-lg navbar-light px-3">
+        <div class="d-md-flex w-100 justify-content-between d-block">
+            <!-- Logo -->
+            <div class="navbar-brand d-md-flex flex d-none">
+                <i class="fa-solid fa-code fs-2 mx-1 purpleText my-auto"></i>
+                <h2 class="mb-0 mx-1 purpleText">Leonardo Balbastro</h2>
+                <h2 class="mb-0 mx-1 text-black fw-bold">DevWeb</h2>
+            </div>
+    
+            <!-- Botón de hamburguesa para dispositivos pequeños -->
+            <button class="navbar-toggler position-absolute bg-white top-0 end-0 mt-2 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Elementos del navbar -->
+            <div class="collapse navbar-collapse px-3 mb-3 mb-lg-0" id="navbarNav">
+                <ul class="navbar-nav ms-auto sectNav">
+                    <li class="nav-item">
+                        <a class="enlace text-decoration-none" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="enlace text-decoration-none" href="./about.html">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="enlace text-decoration-none" href="./projects.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="enlace text-decoration-none" href="./contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item position-absolute bg-white top-0 end-0 mt-2 me-2 d-lg-none">
+                        <button class="btn-close btn-close-black  p-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-label="Close"></button>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="sectNav align-items-center mx-2 px-5 d-flex justify-content-between">
-            <a href="./index.html" class="enlace text-decoration-none list-group-item">Inicio</a>
-            <a href="./about.html" class="enlace text-decoration-none list-group-item">Sobre Mi</a>
-            <a href="./projects.html" class="enlace text-decoration-none list-group-item">Proyectos</a>
-            <a href="./contact.html" class="enlace text-decoration-none list-group-item">Contacto</a>
-        </div>
-    </div>
-    <div class="w-100 container-fluid text-center p-5 contactHeader">
+    </nav>
+    <div class="container-fluid text-center p-5 contactHeader">
         <h2 class="contactTitle">Contactame</h2>
         <a href="./index.html" class="contactSubtitle purpleText text-decoration-none ">Inicio</a> <span class="contactSubtitle">>
             Contactame</span>
     </div>
-    <div class="formSection d-flex py-3 px-5 col-xl-12">
-        <div class="contactInfo container col-xl-5 p-5 d-flex row">
-            <div class="d-flex align-items-center">
-                <i class="fa-solid fa-phone"></i>
-                <div class="align-items-center px-3">
-                    <h6 class="titleCall m-0">Llamame</h6>
-                    <p class="subTitleCallNumber m-0">+54 11 2523 5888</p>
-                </div>
-            </div>
-            <div class="d-flex align-items-center">
+    <section class="formSect">
+        <div class="formSection d-flex py-3 px-5 col-xl-12">
+            <div class="contactInfo container col-xl-5 p-5 d-flex row">
                 <div class="d-flex align-items-center">
-                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-solid fa-phone"></i>
                     <div class="align-items-center px-3">
-                        <h6 class="titleCall m-0">Whatsapp</h6>
-                        <p class="subTitleCallNumber m-0">+54 911 2523 5888</p>
+                        <h6 class="titleCall m-0">Llamame</h6>
+                        <p class="subTitleCallNumber m-0">+54 11 2523 5888</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div class="align-items-center px-3">
+                            <h6 class="titleCall m-0">Whatsapp</h6>
+                            <p class="subTitleCallNumber m-0">+54 911 2523 5888</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div class="align-items-center px-3">
+                        <h6 class="titleCall m-0">Email</h6>
+                        <p class="subTitleCallNumber m-0">leonardonbalbastro@gmail.com</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center ">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="align-items-center px-3 col-10">
+                        <h6 class="titleCall m-0">Ubicación</h6>
+                        <p class="subTitleCallNumber m-0">Culpina 1000, CABA, Buenos Aires, Argentina</p>
                     </div>
                 </div>
             </div>
-            <div class="d-flex align-items-center">
-                <i class="fa-regular fa-envelope"></i>
-                <div class="align-items-center px-3">
-                    <h6 class="titleCall m-0">Email</h6>
-                    <p class="subTitleCallNumber m-0">leonardonbalbastro@gmail.com</p>
-                </div>
-            </div>
-            <div class="d-flex align-items-center ">
-                <i class="fa-solid fa-location-dot"></i>
-                <div class="align-items-center px-3 col-5">
-                    <h6 class="titleCall m-0">Ubicación</h6>
-                    <p class="subTitleCallNumber m-0">Culpina 1000, CABA, Buenos Aires, Argentina</p>
-                </div>
+            
+            <div class="container mt-5 col-xl-5">
+                <form onsubmit="return validarFormulario()" class="row g-3 miForm">
+                    <div class="col-md-6">
+                        <input type="text" name="nombre" id="nombre" class="form-control mb-3" placeholder="Nombre" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="email" id="email" class="form-control mb-3" placeholder="Email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="asunto" id="asunto" class="form-control mb-3" placeholder="Asunto" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" name="telefono" id="telefono" class="form-control mb-3" placeholder="Telefono" required minlength="10" maxlength="13">
+                    </div>
+                    <div class="col-12">
+                        <textarea name="mensaje" id="mensaje" class="form-control mb-3 no-resize" rows="5" maxlength="255" required></textarea>
+                    </div>
+                    <div class="col-12 text-end">
+                        <input type="submit" class="buttonInputForm border-1 bg-transparent p-2 rounded mainButton px-3"
+                            value="Enviar mensaje">
+                    </div>
+                </form>
             </div>
         </div>
-        <!-- <div class="contactForm container col-xl-6 row justify-content-end align-items-center p-3">
-        <input type="text" name="" id="" placeholder="Nombre" class="col-4">
-        <input type="text" name="" id="" placeholder="Telefono" class="col-4">
-        <input type="text" name="" id="" placeholder="Correo" class="col-4">
-        <input type="text" name="" id="" placeholder="Asunto" class="col-4">
-        <input type="text" name="" id="" placeholder="Descripcion" class="col-11">
-        <input type="button" value="Enviar mensaje" class="col-6">
-    </div> -->
-        <div class="container mt-5 col-xl-5">
-            <form onsubmit="return validarFormulario()" class="row g-3 miForm">
-                <div class="col-md-6">
-                    <input type="text" name="nombre" id="nombre" class="form-control mb-3" placeholder="Nombre" required>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" name="email" id="email" class="form-control mb-3" placeholder="Email" required>
-                </div>
-                <div class="col-md-6">
-                    <input type="text" name="asunto" id="asunto" class="form-control mb-3" placeholder="Asunto" required>
-                </div>
-                <div class="col-md-6">
-                    <input type="number" name="telefono" id="telefono" class="form-control mb-3" placeholder="Telefono" required minlength="10" maxlength="13">
-                </div>
-                <div class="col-12">
-                    <textarea name="mensaje" id="mensaje" class="form-control mb-3 no-resize" rows="5" maxlength="255" required></textarea>
-                </div>
-                <div class="col-12 text-end">
-                    <input type="submit" class="buttonInputForm border-1 bg-transparent p-2 rounded mainButton px-3"
-                        value="Enviar mensaje">
-                </div>
-            </form>
-        </div>
-    </div>
+    </section>
 
-    <div class="w-100 d-flex justify-content-center p-3">
-        <img src="./imgs/opera_ky5EFkouCe.png" alt="" class="img-fluid w-50 border rounded">
-    </div>
-    <div class="col-xl-12 footer align-items-center d-flex justify-content-between p-5">
-        <div class="BrandSect my-auto fs-5">
+    <section class="geo">
+        <div class="col-12 justify-content-center text-center p-3">
+            <img src="./imgs/opera_ky5EFkouCe.png" alt="" class="img-fluid border rounded">
+        </div>
+    </section>
+    <section class="footer col-12 align-items-center d-flex justify-content-between p-lg-5 p-2">
+        <div class="BrandSect col-lg-10 col-12 fs-5 align-items-center">
           <h5 class="align-items-center mb-0">© LB <span class="fw-bold">DevWeb</span>. Diseñado por <a href="#">Vanina
               Balbastro</a> , Desarrollado por <span class="purpleText">Leonardo Balbastro</span>.</h5>
         </div>
-        <div class="redes fs-5">
-          <a href="https://www.instagram.com/leobalbastro/" target="_blank" class="text-decoration-none text-secondary mx-3"><i class="fa-brands fa-square-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/leobalbastro/"  target="_blank" class="text-decoration-none text-secondary mx-3"><i class="fa-brands fa-linkedin"></i></a>
+        <div class="redes col-lg-2 d-none d-lg-block text-lg-center fs-5">
+          <a href="https://www.instagram.com/leobalbastro/" target="_blank"
+            class="text-decoration-none text-secondary mx-3"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/leobalbastro/" target="_blank"
+            class="text-decoration-none text-secondary mx-3"><i class="fa-brands fa-linkedin"></i></a>
         </div>
-      </div>
+</section>
+
 
     <script src="./scripts/index.js"></script>
     <script src="https://kit.fontawesome.com/d4e1b9f057.js" crossorigin="anonymous"></script>
@@ -115,5 +140,3 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
-
-</html>
