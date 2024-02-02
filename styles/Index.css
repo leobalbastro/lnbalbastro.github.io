@@ -38,10 +38,26 @@
     font-weight: 600;
     padding: 0;
     margin: 0;
+    /* font-size: 1.5rem; */
 }
+.form-control{
+    font-size: 1.5rem !important;
+}
+/* Deshabilitar los botones del spinner */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/* siguiente codigo*/
 .title{
-    margin:0 ;
-    font-size: 4rem;
+    margin:auto ;
+    font-size: 3rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
 }
 .description{
     color: #696969;
@@ -73,7 +89,29 @@
 .sectInfo{
     color: #8C89A2;
     font-weight: 500;
-    font-size: medium;
+    font-size: 1.3rem;
+}
+.cardText{
+    font-size: 2rem;
+}
+.cardSubtitle{
+    font-size: 1.5rem;
+}
+.cardIcon{
+    font-size: 3rem;
+}
+
+.tagLabel{
+    font-size: 1.55rem;
+}
+.tagData{
+    font-size: 1.55rem;
+}
+.form-control{
+    border-color: #7D11F9 !important;
+}
+.container{
+    border: 0.15rem solid #7D11F9;
 }
 .photoVector{
     /* background-color: #3F3A64; */
@@ -85,16 +123,38 @@
     width: 40rem;
 }
 .mainButton{
-    border: 0.1rem solid #7D11F9;
+    border: 1rem solid #7D11F9;
     color: #7D11F9;
     text-decoration: none;
     padding: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 1.5rem;
 
 }
 .mainButton:hover{
     background-color: #7D11F9 !important;
     color: white;
+}
+.cardButton{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #7D11F9;
+    padding: 0.5rem;
+    border: 0.15rem solid #7D11F9;
+}
+.cardButton:hover{
+    background-color: #7D11F9 !important;
+    color: white;
+}
+.cvButton{
+    text-decoration: none;
+    color: #7D11F9;
+    font-size: 1.5rem;
+    border: 0.2rem solid #7D11F9;
+    padding: 1rem;
+}
+.cvButton:hover{
+    color: white;
+    background-color: #7D11F9 !important;
 }
 
 .title{
@@ -117,6 +177,7 @@
 }
 .aboutDesc{
     font-weight: 400;
+    font-size: 3rem;
 }
 .imgContainer{
     padding-right: 0;
@@ -174,11 +235,12 @@
     resize: none;
 }
 .titleCall{
-    font-size: 1rem;
+    font-size: 2rem;
 }
 .subTitleCallNumber{
-    font-size: 0.9rem;
+    font-size: 1.3rem;
 }
+
 .formSection i
 {
     color: #7D11F9;
@@ -199,18 +261,148 @@
     width: 30%;
 }
 .sub{
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 .welcomeSect{
     background-color: rgba(147, 107, 232, 0.05);
 }
-
-
+.socialMediaText{
+    font-size: 2rem;
+    color: black;
+}
 
 
 
 /* MEDIA QUERYS */
+@media (max-width: 1305px) {
+    .sub{
+        font-size: 1.3rem;
+    }
+    .cvButton{
+        text-decoration: none;
+        color: #7D11F9;
+        font-size: 1.5rem;
+        border: 0.2rem solid #7D11F9;
+        padding: 0.5rem;
+    }
+    .socialMediaText{
+        font-size: 1.5rem;
+    }
+    .socialMediaText i{
+        font-size: 2rem;
+        justify-content: center;
+    }
+}
+@media (max-width: 1100px) {
+    .socialMediaText{
+        font-size: 1.5rem;
+    }
+    .cvButton{
+        text-decoration: none;
+        color: #7D11F9;
+        font-size: 1.3rem;
+        border: 0.2rem solid #7D11F9;
+        padding: 0.5rem;
+    }
+}
 @media (max-width: 992px) {
+    .sectInfo{
+        font-size: 1.3rem;
+    }
+    .aboutDesc{
+        font-size: 2rem;
+    }
+    .sub{
+        font-size: 1rem;
+
+    }
+    .cardText{
+        font-size: 1rem;
+    }
+    .cardSubtitle{
+        font-size: 1rem;
+    }
+    .cardIcon{
+        font-size: 1.5rem;
+    }
+    .navbar-collapse {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 1000;
+      padding-top: 3.5rem; /* Ajustar según sea necesario */
+      background-color: rgba(255, 255, 255, 1); /* Color de fondo */
+      overflow-y: auto; /* Añade scroll si es necesario */
+    }
+    .navbar-nav {
+        margin: 0 auto; /* Margen automático en los lados */
+        display: flex; /* Usa flexbox para centrar */
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente si es necesario */
+    }
+    .footer h5{
+        font-size: 0.8rem;
+    }
+    .footer{
+        text-align: center;
+    }
+    .carousel-control-prev {
+        background-color: transparent !important;
+        border: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        opacity: 0 !important;
+    }
+    .carousel-control-next {
+        background-color: transparent !important;
+        border: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        opacity: 0 !important;
+    }
+    .mainButton{
+        border: 1rem solid #7D11F9;
+        color: #7D11F9;
+        text-decoration: none;
+        /* padding: 10rem; */
+        font-size: 1.5rem !important;
+    
+    }
+
+    .titleCall{
+        font-size: 1.5rem;
+    }
+    .cardButton{
+        font-size: 1rem;
+        text-decoration: none;
+        color: #7D11F9;
+        padding: 0.5rem;
+        border: 0.15rem solid #7D11F9;
+    }
+    .contactTitle{
+        font-size: 2rem !important;
+    }
+    .contactSubtitle{
+        font-size: 1rem;
+    }
+
+    .cvButton{
+        text-decoration: none;
+        color: #7D11F9;
+        font-size: 1.5rem;
+        border: 0.2rem solid #7D11F9;
+        padding: 0.5rem;
+    }
+    .title{
+        font-size: 1.5rem !important;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+  }
+
+  @media (max-width: 360px) {
     .subTitle{
         font-size: 1rem;
     }
@@ -250,5 +442,24 @@
         width: 0 !important;
         height: 0 !important;
         opacity: 0 !important;
+    }
+    .mainButton{
+        border: 1rem solid #7D11F9;
+        color: #7D11F9;
+        text-decoration: none;
+        /* padding: 10rem; */
+        font-size: 1 !important;
+    
+    }
+
+    .titleCall{
+        font-size: 0.9rem;
+    }
+    .cardButton{
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: #7D11F9;
+        padding: 0.5rem;
+        border: 0.15rem solid #7D11F9;
     }
   }
