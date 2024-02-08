@@ -33,7 +33,7 @@ if(window.location.href.includes('contact')){
         if (response.ok) {
             // Limpiar los campos del formulario después de enviarlos con éxito
             clearFormFields();
-            return response.json();
+            return;
         }
         throw new Error('Error en la solicitud.');
     })
@@ -48,7 +48,9 @@ if(window.location.href.includes('contact')){
   
       if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA' || element.tagName === 'SELECT') {
         // Limpia el valor del elemento
-        element.value = '';
+        if(element.type !== "submit"){
+          element.value = '';
+        }
     }
     }
   }
