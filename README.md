@@ -29,7 +29,7 @@ TO-DO List:
 # -----------------
 Comienzo de la reforma del proyecto web.
 Algunas ideas a realizar:
-    - Frontend con React
+    - Frontend con NextJS
     - SPA (Single Page Application)
     - Imagenes responsive
     - CTA (Call to Action)
@@ -40,6 +40,3 @@ Algunas ideas a realizar:
     - Fuentes legibles en ambos temas
     - Incorporación de Calendly para agendar reuniones
     - Sección de contacto con un formulario manejado por un backend
-    - Deploy de Backend en Render
-    - Deploy de Frontend en GitHub Pages
-    - Implementación de NextJS y NestJS correspondientes a cada tecnologia
