@@ -1,3 +1,8 @@
-export default function Home(){
-    return <h1>hola</h1>
+// aca va todo lo de la pagina principal
+export default function Home() {
+    return (
+        <section>
+            hola
+        </section>
+    )
 }

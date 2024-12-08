@@ -1,10 +1,10 @@
 import './globals.css'
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
+import GoToTopButton from './components/GoToTopButton'
+import NavBar from './components/NavBar';
 config.autoAddCss = false;
-
 
 export const metadata = {
   title: "Leonardo Balbastro - Personal Blog",
@@ -16,81 +16,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" >
-      <body className="bg-slate-400 dark:bg-slate-900">
+    <html lang="en">
+      <body >
         {/* burger button */}
         {/* NavBar */}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
-        {children}
+        <NavBar />
+
         {children}
         {/* go to top button */}
+        <GoToTopButton />
         {/* Footer */}
-        <button className="dark:bg-white bg-slate-900 text-white dark:text-slate-700 p-1 rounded-3xl w-1/12 z-50 fixed bottom-10 right-10 h-12 w-12"><FontAwesomeIcon icon={faChevronUp} /></button>
       </body>
-    </html>
+    </html >
   )
 }
