@@ -1,9 +1,9 @@
 import './globals.css'
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import Link from 'next/link';
 import GoToTopButton from './components/GoToTopButton'
 import NavBar from './components/NavBar';
+
 config.autoAddCss = false;
 
 export const metadata = {
@@ -15,13 +15,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
-      <body >
+      <body className='light'>
         {/* burger button */}
         {/* NavBar */}
         <NavBar />
-
         {children}
         {/* go to top button */}
         <GoToTopButton />

@@ -1,6 +1,8 @@
 "use client"
 import React from 'react';
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, NavbarMenuToggle, NavbarMenuItem, NavbarMenu } from "@nextui-org/react";
+import { usePathname } from 'next/navigation';
+import ChangeTheme from './ChangeTheme';
 
 export const AcmeLogo = () => {
     return (
@@ -16,11 +18,14 @@ export const AcmeLogo = () => {
 };
 
 const NavBar: React.FC = () => {
+    const pathname = usePathname();
+    console.log(pathname)
+
     const menuItems = [
         "Home",
         "About",
         "Projects",
-        "Contact me",
+        "Contact",
     ];
     return (
         <Navbar isBordered shouldHideOnScroll className='dark:bg-slate-950 dark:text-white lg:text-lg' >
@@ -32,24 +37,24 @@ const NavBar: React.FC = () => {
                 <NavbarMenuToggle />
             </NavbarContent>
             <NavbarContent className="hidden lg:flex gap-4" justify="center">
-                <NavbarItem isActive>
+                <NavbarItem isActive={pathname == '/' ? true : false}>
                     <Link color="foreground" href="/">
                         Home
                     </Link>
                 </NavbarItem>
-                <NavbarItem>
+                <NavbarItem isActive={pathname == '/about' ? true : false}>
                     <Link color="foreground" href="/about">
                         About
                     </Link>
                 </NavbarItem>
-                <NavbarItem>
+                <NavbarItem isActive={pathname == '/projects' ? true : false}>
                     <Link aria-current="page" href="/projects">
                         Projects
                     </Link>
                 </NavbarItem>
-                <NavbarItem>
+                <NavbarItem isActive={pathname == '/contact' ? true : false}>
                     <Link color="foreground" href="/contact">
-                        Contact Me
+                        Contact
                     </Link>
                 </NavbarItem>
             </NavbarContent>
@@ -62,6 +67,9 @@ const NavBar: React.FC = () => {
                         Sign Up
                     </Button>
                 </NavbarItem>
+                <NavbarItem>
+                    <ChangeTheme />
+                </NavbarItem>
             </NavbarContent>
             <NavbarMenu>
                 {menuItems.map((item, index) => (
@@ -71,7 +79,7 @@ const NavBar: React.FC = () => {
                             color={
                                 index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
                             }
-                            href="#"
+                            href={item == 'Home' ? '/' : `/${item.toLowerCase()}`}
                             size="lg"
                         >
                             {item}
@@ -79,7 +87,7 @@ const NavBar: React.FC = () => {
                     </NavbarMenuItem>
                 ))}
             </NavbarMenu>
-        </Navbar>
+        </Navbar >
     );
 }
 
